@@ -10,12 +10,12 @@
         <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Portfolio
         </h2>
-        <p class="max-w-[700px] text-gray-500 dark:text-gray-400">
+        <p class="max-w-[700px] text-white-500 dark:text-white-400">
           Check out some of my recent projects and the technologies I used to
           build them.
         </p>
       </div>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="[&_h3]:text-red-400 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {#each images as image, index}
           <div
             class="rounded-lg border bg-card text-card-foreground shadow-sm"
@@ -31,7 +31,7 @@
             />
             <div class="space-y-2 p-4">
               <h3 class="text-lg font-semibold">{image.title}</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
+              <p class="text-sm text-white-500 dark:text-white-400">
                 {image.desc}
               </p>
             </div>
@@ -46,7 +46,7 @@
         <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Key Skills &amp; Technologies
         </h2>
-        <p class="max-w-[700px] text-gray-500 dark:text-gray-400">
+        <p class="max-w-[700px] text-white-500 dark:text-white-400">
           I'm proficient in a wide range of technologies and tools, enabling me
           to deliver high-quality, scalable, and maintainable solutions.
         </p>
@@ -54,7 +54,7 @@
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <div class="space-y-2">
           <h3 class="text-lg font-semibold">Front-End</h3>
-          <ul class="space-y-1 text-sm text-gray-500 dark:text-gray-400">
+          <ul class="space-y-1 text-sm text-white-500 dark:text-white-400">
             <li>React</li>
             <li>Next.js</li>
             <li>Vue.js</li>
@@ -64,7 +64,7 @@
         </div>
         <div class="space-y-2">
           <h3 class="text-lg font-semibold">Back-End</h3>
-          <ul class="space-y-1 text-sm text-gray-500 dark:text-gray-400">
+          <ul class="space-y-1 text-sm text-white-500 dark:text-white-400">
             <li>Node.js</li>
             <li>Express</li>
             <li>MongoDB</li>
@@ -74,7 +74,7 @@
         </div>
         <div class="space-y-2">
           <h3 class="text-lg font-semibold">Other Tools &amp; Skills</h3>
-          <ul class="space-y-1 text-sm text-gray-500 dark:text-gray-400">
+          <ul class="space-y-1 text-sm text-white-500 dark:text-white-400">
             <li>Git &amp; GitHub</li>
             <li>Docker</li>
             <li>AWS (EC2, S3, Lambda)</li>

@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Inknut Antiqua";
+  font-family: "pt-sans";
   font-style: normal;
   font-weight: 400;
 }

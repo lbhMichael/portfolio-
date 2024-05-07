@@ -40,7 +40,7 @@
       </div>
     </div>
   </section>
-  <section class="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800">
+  <section class="w-full py-12 md:py-24 lg:py-32">
     <div class="container grid gap-12">
       <div class="space-y-4">
         <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

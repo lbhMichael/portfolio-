@@ -9,7 +9,7 @@
 </script>
 
 <header
-  class={`sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between ${y > 0 ? "py-4 bg-slate-500 border-violet-200" : "py-6 bg-transparent border-transparent"}`}
+  class={`sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between ${y > 0 ? " bg-slate-500 rounded-sm border-violet-200" : "py-6 bg-transparent border-transparent"}`}
 >
   <div class="flex-1">
     <h2 class="cursor-pointer"><a href="/">Michael Ndukwe</a></h2>

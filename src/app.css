@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,700");
+@import "@fontsource/pt-sans";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inknut Antiqua";
+  font-style: normal;
+  font-weight: 400;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root::view-transition-old(root) {
+}
+
+:root::view-transition-new(root) {
+}

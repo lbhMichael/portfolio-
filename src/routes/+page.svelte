@@ -1,24 +1,34 @@
 <script>
   import Skills from "$lib/components/Skills.svelte";
   import Slider from "$lib/components/Slider.svelte";
+  import About from '$lib/components/About.svelte';
   import SliderItem from "$lib/components/SliderItem.svelte";
 </script>
 
 <main class="max-w-screen-2xl px-2 md:px-4 mx-auto">
-  <section
-    id="main"
-    class="flex h-[100vh] w-full flex-col space-y-8 pt-24 md:pt-56 items-center"
-  >
-    <h1 class="text-6xl w-full items-start">Hi, My Name is Michael E Ndukwe</h1>
-    <p class="text-lg items-start mr-auto md:text-md">
-      A developer dedicated to creating intuitive and fun applications for the
+
+
+<section class="w-full py-12 md:py-24 lg:py-32">
+  <div class="container grid gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
+    <div class="space-y-4 place-content-center border">
+      <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Michael Ndukwe</h1>
+      <h2 class="text-2xl font-semibold text-red-500">Fullstack Developer </h2>
+      <p class="max-w-[600px] text-white md:text-xl/tight">
+       A developer dedicated to creating intuitive and fun applications for the
       world
-    </p>
-    <div class="flex w-full items-start gap-4">
-      <a href="/contact-me" class="btn btn-success btn-outline">Contact Me</a>
-      <a href="/" class="btn btn-secondary btn-outline">Resumé</a>
+      </p>
     </div>
-  </section>
-  <SliderItem />
+    <div class="grid gap-6">
+      <img
+        src="/assets/Buddha.png"
+        width="550"
+        height="310"
+        alt="John Doe"
+        class="mx-auto aspect-square rounded-xl object-cover object-center sm:w-full"
+      />
+    </div>
+  </div>
+</section>
+  <About/>
   <Skills />
 </main>

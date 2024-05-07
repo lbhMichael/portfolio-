@@ -12,6 +12,7 @@
   }
 </script>
 
+<Navbar {y} />
 <div class="w-5/6 mx-auto min-h-screen relative">
   <div
     class={`fixed bottom-0 w-full duration-200 flex p-10 z-[10] ${y > 0 ? "pointer-events-auto opacity-full" : "pointer-events-none opacity-0"}`}
@@ -24,9 +25,9 @@
       /></button
     >
   </div>
-  <Navbar {y} />
+
   <slot />
-  <Footer />
 </div>
+<Footer />
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />

@@ -57,9 +57,9 @@
           <ul class="space-y-1 text-sm text-gray-500 dark:text-gray-400">
             <li>React</li>
             <li>Next.js</li>
-            <li>Vue.js</li>
+            <li>Svelte</li>
             <li>Tailwind CSS</li>
-            <li>HTML5 &amp; CSS3</li>
+            <li>HTML5 & CSS3</li>
           </ul>
         </div>
         <div class="space-y-2">
@@ -68,6 +68,7 @@
             <li>Node.js</li>
             <li>Express</li>
             <li>MongoDB</li>
+            <li>Python</li>
             <li>PostgreSQL</li>
             <li>RESTful APIs</li>
           </ul>

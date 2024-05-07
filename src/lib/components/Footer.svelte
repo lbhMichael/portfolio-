@@ -1,9 +1,9 @@
 <footer class="w-full border py-6 dark:bg-gray-800">
-  <div class="container flex items-center justify-between px-4 md:px-6">
-    <p class="text-smtext-gray-500 dark:text-gray-400">
+  <div class="mx-auto flex items-center justify-between px-4 md:px-24">
+    <p class="text-sm text-gray-500 dark:text-gray-400">
       © <span class="text-md"> 2024 </span> Michael Ndukwe. All rights reserved.
     </p>
-    <div class="flex items-center space-x-4">
+    <div class="flex items-center [&_svg]:cursor-pointer space-x-4">
       <a
         class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
         href="https://github.com/lbhMichael"
@@ -51,11 +51,11 @@
           <rect width="4" height="12" x="2" y="9"></rect>
           <circle cx="4" cy="4" r="2"></circle>
         </svg>
-        <span class="sr-only">Lin</span>
+        <span class="sr-only">LinkedIn</span>
       </a>
       <a
         class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-        href="#"
+        href="www.google.com"
         rel="ugc"
       >
         <svg

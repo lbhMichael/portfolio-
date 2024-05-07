@@ -7,7 +7,7 @@
 <main class="max-w-screen-2xl px-2 md:px-4 mx-auto">
   <section
     id="main"
-    class="flex h-[100vh] w-full flex-col space-y-8 pt-24 md:pt-56 items-center"
+    class="flex h-[80vh] w-full flex-col space-y-8 pt-24 md:pt-56 items-center"
   >
     <h1 class="text-6xl w-full items-start">Hi, My Name is Michael E Ndukwe</h1>
     <p class="text-lg items-start mr-auto md:text-md">
@@ -19,6 +19,5 @@
       <a href="/" class="btn btn-secondary btn-outline">Resumé</a>
     </div>
   </section>
-  <SliderItem />
   <Skills />
 </main>

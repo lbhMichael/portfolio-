@@ -1,23 +1,76 @@
 <script>
   import Skills from "$lib/components/Skills.svelte";
-  import Slider from "$lib/components/Slider.svelte";
-  import SliderItem from "$lib/components/SliderItem.svelte";
+  import About from "$lib/components/About.svelte";
 </script>
 
 <main class="max-w-screen-2xl px-2 md:px-4 mx-auto">
-  <section
-    id="main"
-    class="flex h-[80vh] w-full flex-col space-y-8 pt-24 md:pt-56 items-center"
-  >
-    <h1 class="text-6xl w-full items-start">Hi, My Name is Michael E Ndukwe</h1>
-    <p class="text-lg items-start mr-auto md:text-md">
-      A developer dedicated to creating intuitive and fun applications for the
-      world
-    </p>
-    <div class="flex w-full items-start gap-4">
-      <a href="/contact-me" class="btn btn-success btn-outline">Contact Me</a>
-      <a href="/" class="btn btn-secondary btn-outline">Resumé</a>
+  <section class="relative w-full py-12 md:py-24 lg:py-32">
+    <div class="absolute watermark">Ndukwe</div>
+    <div class="container grid gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
+      <div class="space-y-4 place-content-center w-fitborder">
+        <h2 class="text-2xl font-semibold text-[var(--primary-blue)]">
+          Fullstack Developer
+        </h2>
+
+        <svg
+          class="start"
+          xmlns="http://www.w3.org/2000/svg"
+          width="850"
+          height="100"
+          viewBox="0 0 850 100"
+        >
+          <text
+            x="0"
+            y="90"
+            font-family="pt-sans"
+            font-size="100"
+            font-weight="bold"
+            stroke-width="1.5"
+          >
+            Michael Ndukwe
+          </text>
+        </svg>
+
+        <p class="md:text-3xl/tight">
+          A developer dedicated to creating intuitive and fun applications for
+          the world.
+        </p>
+      </div>
+      <div class="grid">
+        <img
+          src="/assets/Buddha.png"
+          width="550"
+          alt="Buddha"
+          class="mx-auto aspect-square object-contain z-[10] object-right sm:w-full"
+        />
+      </div>
     </div>
   </section>
+  <About />
   <Skills />
 </main>
+
+<style>
+  /* Define the start class for the stroke animation */
+  .start {
+    height: auto;
+    stroke: var(--primary-orange);
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650; /* Adjust to fit the length of your text */
+    stroke-width: 1;
+    fill: transparent;
+    animation: line 4s linear forwards; /* Smooth animation */
+  }
+
+  /* Keyframes for the stroke animation */
+  @keyframes line {
+    90% {
+      stroke-dashoffset: 0;
+      fill: transparent; /* Start the stroke as hidden */
+    }
+    to {
+      stroke-dashoffset: 0;
+      fill: var(--primary-orange); /* Reveal the stroke */
+    }
+  }
+</style>

@@ -4,13 +4,97 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-blue: #2b7595;
+  --primary-orange: #f44336;
+  --primary-cyan: color#00bcd4;
+}
 * {
-  font-family: "Inknut Antiqua";
+  font-family: "pt-sans";
   font-style: normal;
   font-weight: 400;
 }
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Playfair Display", serif; /* Secondary font */
+  font-size: 8.6em; /* 2 times base font size */
+  font-weight: bold;
+  /* Bold orange color */
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 24px; /* 1.5 times base font size */
+  font-weight: bold;
+  color: #f44336; /* Red-orange color */
+}
+
+h3 {
+  font-size: 20px; /* 1.25 times base font size */
+  font-weight: semi-bold;
+  color: #00bcd4; /* Cyan-blue color */
+  margin-bottom: 0.5em;
+}
+p {
+  color: #00bcd4;
+}
+
+/* Links */
+a {
+  color: #00bcd4;
+  transition: color 0.4s ease-in-out; /* Cyan-blue color */
+}
+
+/* Buttons */
+button {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff5722; /* Bold orange color */
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e64a19; /* Darker shade of orange for hover state */
+}
+
+/* Captions */
+.caption {
+  font-size: 14px; /* Smaller than base font size */
+  color: #9e9e9e; /* Light gray color */
+}
+/* Watermark styling */
+.watermark {
+  animation: fade-in 4s linear forwards;
+  transform: translateX(-200px);
+  top: 55%; /* Vertically center the watermark */
+  left: 10%; /* Horizontally center the watermark */
+  transform: translate(-50%, -50%); /* Translate to center */
+  font-size: 30rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  letter-spacing: 0.4; /* Use bold font weight */
+  color: rgba(255, 255, 255, 0.1); /* White color with low opacity */
+  z-index: 3; /* Place watermark behind other content */
+  user-select: none; /* Prevent text selection */
+  pointer-events: none; /* Allow interaction with other elements */
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+img {
+  animation: fade-in 6s linear forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 :root::view-transition-old(root) {

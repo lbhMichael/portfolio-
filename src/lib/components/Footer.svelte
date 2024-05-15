@@ -1,4 +1,4 @@
-<footer class="w-full border py-6 dark:bg-gray-800">
+<footer class="w-full py-6 dark:bg-gray-800">
   <div class="mx-auto flex items-center justify-between px-4 md:px-24">
     <p class="text-sm text-gray-500 dark:text-gray-400">
       © <span class="text-md"> 2024 </span> Michael Ndukwe. All rights reserved.

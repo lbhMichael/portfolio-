@@ -5,7 +5,12 @@ export default {
     tablet: "1480px",
     mobile: "980px",
 
-    extend: {},
+    extend: {
+      fontSize: {
+        h1: "20rem",
+        pa: "4rem",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };

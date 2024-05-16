@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { browser } from "$app/environment";
+
   export let y;
 
   let tabs = [
@@ -6,6 +8,13 @@
     { name: "About Me", link: "#about" },
     { name: "Contact Me", link: "#contact-me" },
   ];
+  if (browser) {
+    const menu = document.getElementById("menuToggle");
+    menu?.addEventListener("click", () => {
+      const mobile = document.getElementById("mobileMenu");
+      mobile?.classList.toggle("hidden");
+    });
+  }
 </script>
 
 <header
@@ -18,19 +27,33 @@
       </h2>
     </a>
   </div>
-  <div class="flex-none">
-    <ul class="flex gap-12">
-      {#each tabs as item, index}
-        <li class="cursor-pointer">
-          <a href={item.link}>
-            <p class="nav-link text-3xl font-semibold tracking-wide">
-              {item.name}
-            </p>
-          </a>
-        </li>
-      {/each}
-    </ul>
-  </div>
+  <button id="menuToggle" class="md:hidden">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      class="h-6 w-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      ></path>
+    </svg>
+  </button>
+  <ul id="mobileMenu" class="md:flex gap-12 hidden">
+    {#each tabs as item, index}
+      <li class="cursor-pointer">
+        <a href={item.link}>
+          <p class="nav-link text-3xl font-semibold tracking-wide">
+            {item.name}
+          </p>
+        </a>
+      </li>
+    {/each}
+  </ul>
 </header>
 
 <style>
@@ -43,8 +66,5 @@
   .nav-link:hover {
     color: var(--primary-orange);
     transform: scale(110%); /* Slight upward translation */
-  }
-  .filter-blur {
-    filter: blur(5px); /* Adjust the blur value as needed */
   }
 </style>

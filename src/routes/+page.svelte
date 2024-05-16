@@ -3,7 +3,7 @@
   import About from "$lib/components/About.svelte";
 </script>
 
-<main class="max-w-screen-2xl px-2 md:px-4 mx-auto">
+<main class="w-screen px-2 md:px-4 mx-auto">
   <section class="relative w-full py-12 md:py-24 lg:py-32">
     <div class="absolute watermark">Ndukwe</div>
     <div class="container grid gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
@@ -11,7 +11,6 @@
         <h2 class="text-2xl font-semibold text-[var(--primary-blue)]">
           Fullstack Developer
         </h2>
-
         <svg
           class="start"
           xmlns="http://www.w3.org/2000/svg"
@@ -36,12 +35,11 @@
           the world.
         </p>
       </div>
-      <div class="grid">
+      <div class="md:grid hidden">
         <img
           src="/assets/Buddha.png"
-          width="550"
           alt="Buddha"
-          class="mx-auto aspect-square object-contain z-[10] object-right sm:w-full"
+          class="mx-auto aspect-square object-contain z-[10] object-right max-w-full h-auto"
         />
       </div>
     </div>
@@ -55,8 +53,8 @@
   .start {
     height: auto;
     stroke: var(--primary-orange);
-    stroke-dasharray: 650;
-    stroke-dashoffset: 650; /* Adjust to fit the length of your text */
+    stroke-dasharray: 650; /* Adjust based on the SVG's width */
+    stroke-dashoffset: 650; /* Adjust based on the SVG's width */
     stroke-width: 1;
     fill: transparent;
     animation: line 4s linear forwards; /* Smooth animation */
@@ -71,6 +69,15 @@
     to {
       stroke-dashoffset: 0;
       fill: var(--primary-orange); /* Reveal the stroke */
+    }
+  }
+
+  /* Responsive adjustments for the SVG width */
+  @media (max-width: 768px) {
+    .start {
+      width: 600px !important; /* Adjust the width for smaller screens */
+      stroke-dasharray: 480; /* Adjust dasharray for the new width */
+      stroke-dashoffset: 480; /* Adjust offset for the new width */
     }
   }
 </style>

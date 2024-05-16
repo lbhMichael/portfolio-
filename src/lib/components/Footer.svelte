@@ -1,4 +1,4 @@
-<footer class="w-full py-6 dark:bg-gray-800">
+<footer class="max-w-screen-xl py-6 mx-auto dark:bg-gray-800">
   <div class="mx-auto flex items-center justify-between px-4 md:px-24">
     <p class="text-sm text-gray-500 dark:text-gray-400">
       © <span class="text-md"> 2024 </span> Michael Ndukwe. All rights reserved.
@@ -30,7 +30,7 @@
       </a>
       <a
         class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-        href="#"
+        href="/"
         rel="ugc"
       >
         <svg

@@ -46,8 +46,8 @@
   </section>
 
   <!-- Key Skills and Technologies -->
-  <section class="w-full py-12 md:py-24 lg:py-32">
-    <div class="container grid gap-12">
+  <section class=" py-12 md:py-24 lg:py-32">
+    <div class="container mx-auto grid gap-12">
       <div class="space-y-4">
         <h2 class="font-bold tracking-tighter sm:text-2xl md:text-5xl">
           Key Skills &amp; Technologies

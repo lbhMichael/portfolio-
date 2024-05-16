@@ -73,14 +73,14 @@ button:hover {
 .watermark {
   animation: fade-in 4s linear forwards;
   transform: translateX(-200px);
-  top: 55%; /* Vertically center the watermark */
-  left: 10%; /* Horizontally center the watermark */
+  top: 50%; /* Vertically center the watermark */
+  left: 35%; /* Horizontally center the watermark */
   transform: translate(-50%, -50%); /* Translate to center */
   font-size: 30rem; /* Adjust the font size as needed */
   font-weight: bold;
   letter-spacing: 0.4; /* Use bold font weight */
   color: rgba(255, 255, 255, 0.1); /* White color with low opacity */
-  z-index: 3; /* Place watermark behind other content */
+  z-index: 1; /* Place watermark behind other content */
   user-select: none; /* Prevent text selection */
   pointer-events: none; /* Allow interaction with other elements */
   text-transform: uppercase; /* Convert text to uppercase */

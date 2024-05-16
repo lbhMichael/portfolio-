@@ -9,16 +9,15 @@
     ></script>
     <meta charset="utf-8" />
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
-
     <meta name="viewport" content="width=device-width" />
     %sveltekit.head%
   </head>
   <body
     data-sveltekit-preload-data="hover"
-    class="bg-[#222] relative text-white"
+    class="bg-[#222] w-screen relative border-2 text-white"
   >
     <div style="display: contents">%sveltekit.body%</div>
-    <div class="absolute top-0 left-0 bottom-0 w-full -z-1 opacity-90">
+    <div class="absolute border top-0 left-0 bottom-0 w-screen -z-1 opacity-90">
       <div class="absolute inset-0 -z-10" id="particles-js"></div>
     </div>
     <script>

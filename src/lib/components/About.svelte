@@ -6,40 +6,38 @@
   gsap.registerPlugin(ScrollTrigger);
   let cards;
   if (browser) {
-    cards = document.querySelectorAll(".card");
+    cards = document.querySelectorAll(".cards");
     console.log(cards);
   }
 
-  if (cards) {
-    cards.forEach((card, index) => {
-      const delay = index * 0.2; // Adjust delay based on card index
-      gsap.from(card, {
-        y: 50, // Move the card slightly down initially
-        scale: 0.95, // Start slightly scaled down
-        duration: 1,
-        delay: delay,
-        scrollTrigger: {
-          trigger: card,
-          start: "top center", // Trigger when the top of the card hits the center of the viewport
-          end: "bottom center", // End when the bottom of the card hits the center of the viewport
-          scrub: true, // Smooth scrubbing effect
-          markers: false, // Optional: Disable ScrollTrigger markers
-        },
-        ease: "power1.out", // Easing function for the animation
-        opacity: 0, // Start invisible
-        stagger: 0.4 * index, // Add a stagger effect between cards
-        onComplete: () => {
-          gsap.to(card, {
-            scale: 1, // Return to original size
-            opacity: 1, // Fade in
-            duration: 1,
-            y: 0,
-            ease: "power1.inOut", // Easing function for the return animation
-          });
-        },
-      });
-    });
-  }
+  // if (cards) {
+  //   cards.forEach((card, index) => {
+  //     const delay = index * 1; // Adjust delay based on card index
+  //     gsap.from(card, {
+  //       y: 150, // Move the card slightly down initially
+  //       scale: 0.95, // Start slightly scaled down
+  //       duration: 1,
+  //       delay: delay,
+  //       scrollTrigger: {
+  //         trigger: card,
+  //         scrub: true, // Smooth scrubbing effect
+  //         markers: true, // Optional: Disable ScrollTrigger markers
+  //       },
+  //       ease: "power1.out", // Easing function for the animation
+  //       opacity: 0, // Start invisible
+  //       stagger: 0.8 * index, // Add a stagger effect between cards
+  //       onComplete: () => {
+  //         gsap.to(card, {
+  //           scale: 1, // Return to original size
+  //           opacity: 1, // Fade in
+  //           duration: 1,
+  //           y: 0,
+  //           ease: "power1.inOut", // Easing function for the return animation
+  //         });
+  //       },
+  //     });
+  //   });
+  // }
 </script>
 
 <section class="w-full py-12 md:py-24 lg:py-32">
@@ -57,7 +55,7 @@
     >
       <!-- Card 1 -->
       <div
-        class="card flex z-[100] flex-col items-center gap-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:border-gray-900 hover:shadow-lg dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700"
+        class="cards flex z-[100] flex-col items-center gap-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:border-gray-900 hover:shadow-lg dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700"
       >
         <div
           class="flex items-center justify-center bg-gray-700 rounded-md w-20 h-20"
@@ -86,7 +84,7 @@
       </div>
       <!-- Card 2 -->
       <div
-        class="card flex flex-col items-center gap-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:border-gray-900 hover:shadow-lg dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700"
+        class="cards flex flex-col items-center gap-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:border-gray-900 hover:shadow-lg dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700"
       >
         <div
           class="flex items-center justify-center bg-gray-700 rounded-md w-20 h-20 dark:bg-gray-800"
@@ -115,7 +113,7 @@
       </div>
       <!-- Card 3 -->
       <div
-        class="card flex flex-col items-center gap-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:border-gray-900 hover:shadow-lg dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700"
+        class="cards flex flex-col items-center gap-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:border-gray-900 hover:shadow-lg dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700"
       >
         <div
           class="flex items-center justify-center bg-gray-700 rounded-md w-20 h-20 dark:bg-gray-800"
@@ -145,7 +143,7 @@
       </div>
       <!-- Card 4 -->
       <div
-        class="card flex flex-col items-center gap-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:border-gray-900 hover:shadow-lg dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700"
+        class="cards flex flex-col items-center gap-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:border-gray-900 hover:shadow-lg dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700"
       >
         <div
           class="flex items-center justify-center bg-gray-700 rounded-md w-20 h-20 dark:bg-gray-800"

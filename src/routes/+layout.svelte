@@ -12,8 +12,8 @@
   }
 </script>
 
-<Navbar {y} />
-<div class="w-5/6 mx-auto min-h-screen relative">
+<div class=" w-screen min-h-screen relative">
+  <Navbar {y} />
   <div
     class={`fixed bottom-0 w-full duration-200 flex p-10 z-[10] ${y > 0 ? "opacity-full" : "opacity-0"}`}
   >
@@ -27,7 +27,7 @@
   </div>
 
   <slot />
+  <Footer />
 </div>
-<Footer />
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />

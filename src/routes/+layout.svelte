@@ -12,7 +12,7 @@
   }
 </script>
 
-<div class=" w-screen min-h-screen relative">
+<div class="w-full overflow-hidden min-h-screen relative">
   <Navbar {y} />
   <div
     class={`fixed bottom-0 w-full duration-200 flex p-10 z-[10] ${y > 0 ? "opacity-full" : "opacity-0"}`}

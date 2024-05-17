@@ -19,8 +19,6 @@
         {#each images as image, index}
           <div
             class="rounded-lg z-50 border bg-card text-card-foreground shadow-sm"
-            data-v0-t="card"
-            key={index}
           >
             <img
               src={image.url}
